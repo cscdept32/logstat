@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+    :root {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', 'Raleway', sans-serif;
+            font-size: 20px;
+            background-color: #DA0620;
+            scroll-behavior: smooth;
+        }
+    .pinCodePage{
+            position: absolute;
+            background-color: #22873D;
+            box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            border-radius: 0.25em;
+            padding: 5px;
+            top: 45%;
+            left: 25%;
+            vertical-align: center;
+            margin: auto;
+            width: 50%;
+        }
+    .pinCodePage > * {
+            display: block;
+            padding: 5px;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+    #pinCode{
+            font-size: 1.5em;
+        }
+    #pinSubmit{
+            font-size: 1.25em;
+            border-radius: 0.25em;
+            margin: 15px auto;
+        }
+    </style>
+    <title>Individual Deployment Tool</title>
+</head>
+
+<body>
+    <div class="pinCodePage">
+        <li>Please Enter Your Four Digit PIN Code:</li>
+        <form name="login_form" method="post">
+            <input type="password" id="pinCode" name="pinCode" required minlength="4" maxlength="4" size="6"></input><br>
+            <input type="submit" id="pinSubmit" value="Submit" onClick="submittedPin()"></input>
+        </form>
+        <div>
+            <form action="">
+                <label for="stat">Are you in?</label>
+                <select id="stat" name="stat">
+                    <option value="In">In</option>
+                    <option value="Out">Out</option>7
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+        const pinCode = document.querySelector('#pinCode');
+
+        const submittedPin = () => {
+            if (pinCode.value == 3202) {
+                window.open('http://www.google.co.uk');
+            }
+            }
+        
+
+    </script>
+    <footer>
+    </footer>
+</body>
